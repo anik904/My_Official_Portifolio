@@ -1,0 +1,36 @@
+    $bg-purple: #8540FF;
+    $bg-yellow: #FFC50C;
+    $bg-pink: #EC407A;
+    $bg-orange: #F57F17;
+    $bg-sky: #13B6FF;
+    $bg-green: #49AF46;
+    *body {
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .card--bg {
+        &-one {
+            background-color: $bg-purple;
+            color: white;
+        }
+        &-two {
+            background-color: $bg-yellow;
+            color: white;
+        }
+        &-three {
+            background-color: $bg-pink;
+            color: white;
+        }
+        &-four {
+            background-color: $bg-orange;
+            color: white;
+        }
+        &-five {
+            background-color: $bg-sky;
+            color: white;
+        }
+        &-six {
+            background-color: $bg-green;
+            color: white;
+        }
+    }
