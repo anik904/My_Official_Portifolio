@@ -1,12 +1,20 @@
+/* @import "node_modules/lib/anime.es.js"; */
+
 *body {
     width: 100%;
 }
 
-#particles-js {
-    z-index: -1;
+.wave-top {
     position: relative;
     width: 100%;
+    box-sizing: border-box;
+}
+
+.index-bg {
+    z-index: -1;
+    position: absolute;
     height: fit-content;
+    width: 100%;
 }
 
 .shadow--bg {
@@ -22,11 +30,11 @@
 }
 
 .rotated--hr {
-    width: auto;
+    width: 100%;
+    background-color: transparent;
     transform: rotate(-3deg);
     -webkit-box-shadow: 0px 0px 10px 14px rgba(10, 190, 173, 0.6);
     box-shadow: 0px 0px 10px 14px rgba(10, 190, 173, 0.6);
-    /* Equal to rotateZ(45deg) */
 }
 
 .margin--lg {

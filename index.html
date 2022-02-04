@@ -10,8 +10,13 @@
     <link rel="stylesheet" href="./assets/main.scss">
     <link rel="stylesheet" href="/assets/theme/style.css">
     <link rel="stylesheet" href="./build/main.css">
+    <script src="anime.min.js"></script>
 
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" /> -->
 
 
 
@@ -54,18 +59,21 @@
         <div class="container-fluid profile-block d-flex justify-content-evenly margin--lg ">
             <div class="margin--md">
                 <h5 class=" headline-bg ">Hello, IM
-                    <b class="headline-span "> Shahriar Mahmud Anik</b>
+                    <strong class="headline-span "> Shahriar Mahmud Anik</strong>
                 </h5>
                 <h3 class=" headline-bg ">Frontend Developer</h3>
-                <span class="txt--span ">Freelancer Web/ Mobile UI/UX Designer with Motion Graphics</span> <br>
+                <!-- <span class="txt--span ">Freelancer Web/ Mobile UI/UX Designer with Motion Graphics</span> <br> -->
                 <button type="button " class="btn btn-primary btn-sm rounded-pill px-4 mt-3 ">Hire Me</button>
                 <button type="button " class="btn btn-warning btn-sm rounded-pill mt-3 ">Get Resume</button>
             </div>
             <div>
-                <img class=" rounded-pill shadow--bg-dp mt-2" style="width: 300px; height: 300px; " src="./assets/img/my cv.png " alt=" ">
+                <img class=" rounded-pill shadow--bg-dp mt-2" style="width: 280px; height: 280px; " src="./assets/img/my cv.png " alt=" ">
             </div>
         </div>
-        <img class=" " style="width: 100%; height: 320px; " src="./assets/img/wave.svg " alt=" ">
+        <img class=" wave-top" style="width: 100%; height: 320px; " src="./assets/img/wave.svg " alt=" ">
+        <!-- <svg class="wave-top" width="100" viewBox="0 0 1200 250">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 108.306L50 114.323C100 120.34 200 132.374 300 168.476C400 204.578 500 264.749 600 246.698C700 228.647 800 132.374 900 108.306C1000 84.2382 1100 132.374 1150 156.442L1200 180.51V-8.5451e-06H1150C1100 -8.5451e-06 1000 -8.5451e-06 900 -8.5451e-06C800 -8.5451e-06 700 -8.5451e-06 600 -8.5451e-06C500 -8.5451e-06 400 -8.5451e-06 300 -8.5451e-06C200 -8.5451e-06 100 -8.5451e-06 50 -8.5451e-06H0V108.306Z" fill="#0099FF"/>
+</svg> -->
 
 
 
@@ -76,7 +84,7 @@
                 <img src="./assets/img/line.png " alt=" ">
             </div>
 
-            <div class="card mb-6 justify-content-between mt-5 shadow--bg " style="max-width: 1180px; ">
+            <div class="card box-card mb-6 justify-content-between mt-5 shadow--bg " style="max-width: 1180px; ">
                 <div class="row g-0 ">
                     <div class="col-md-4 ">
                         <img src="./assets/img/me.jpg " class="img-fluid rounded-start " alt="... ">
@@ -88,11 +96,11 @@
                                 of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
                             <h6>Here is Few Features: </h6>
                             <ul>
-                                <li></li>
-                                <li>aa</li>
-                                <li>a</li>
-                                <li>a</li>
-                                <li>aaa</li>
+                                <li>Lorem ipsum, lipsum as it is sometimes known</li>
+                                <li>Lorem ipsum,is sometimes known</li>
+                                <li>Lorem ipsum, sometimes known</li>
+                                <li>Lorem ipsum,as it is sometimes known</li>
+                                <li>Lorem ipsum, it is sometimes known</li>
 
                             </ul>
                             <button type="button " class="btn btn-primary btn-sm rounded-pill px-4 mt-5 ">Hire Me</button>
@@ -361,12 +369,12 @@
 
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <!-- <h5 class="card-title">Card title</h5> -->
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
-                        <div class="card-footer">
+                        <!-- <div class="card-footer">
                             <small class="text-muted">Last updated 3 mins ago</small>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="col">
@@ -380,12 +388,12 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <!-- <h5 class="card-title">Card title</h5> -->
                             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                         </div>
-                        <div class="card-footer">
+                        <!-- <div class="card-footer">
                             <small class="text-muted">Last updated 3 mins ago</small>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="col">
@@ -399,23 +407,111 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <!-- <h5 class="card-title">Card title</h5> -->
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                         </div>
-                        <div class="card-footer">
+                        <!-- <div class="card-footer">
                             <small class="text-muted">Last updated 3 mins ago</small>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
 
         </div>
         <hr class="rotated--hr shadow--bg margin--md ">
+        <div class="text-center headline-bg mt-5">
+            <h3>Contact Me</h3>
+            <h6>Let's Keep In Touch</h6>
+            <img src="./assets/img/line.png " alt=" ">
+        </div>
+        <img src="./assets/img/map.png" class="index-bg  mt-4">
+
+        <div class="container mt-5 text-center">
+
+            <!-- Form start -->
+            <div class="container margin--sm card--glass-first">
+                <div class="row justify-content-evenly">
+
+                    <div class="col-md-4 mt-3">
+
+                        <div>
+                            <img alt="" class="img-fluid " src="https://i.pinimg.com/originals/67/66/49/676649b3f9e491a18bfdb636ffb302d7.png" />
+
+                        </div>
+                    </div>
+                    <!-- <img style="height: 400px; width: 50px;" src="./assets/img/Group 1.png" alt=""> -->
+                    <div class="col-md-5  align-items-center mt-4 justify-content-center ">
+
+                        <div class="align-items-center">
+                            <div class="row mb-3">
+
+                                <div class="col-md-12">
+                                    <input type="email" class="shadow--bg-dp form-control form-control-sm rounded-2 p-2" id="colFormLabelSm" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-12">
+                                    <input type="email" class="form-control form-control-sm rounded-2 p-2" id="colFormLabelSm" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-12">
+                                    <input type="email" class="form-control form-control-sm rounded-2 p-2" id="colFormLabelSm" placeholder="What is your Email?">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-md-12">
+                                    <input type="email" class="form-control form-control-sm rounded p-4  " id="colFormLabelSm" placeholder="Your Questions Write Here...">
+                                </div>
+                                <div class="d-grid gap-2 col-6 mx-auto btn-lg btn-block">
+                                    <button class="btn btn-info mt-4 px-5 rounded-pill" type="button">Submit</button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="col-sm-2 justify-content-sm-between p-2">
+                    <a class="btn btn-primary btn-sm btn-floating" style="background-color: #ff0db6;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-primary btn-sm btn-floating" style="background-color: #1619e7e7;" href="#!" role="button"><i class="fab fa-facebook"></i></a>
+                    <a class="btn btn-primary btn-sm btn-floating" style="background-color: #1619e7e7;" href="#!" role="button"><i class="fab fa-linkedin"></i></a>
+                    <a class="btn btn-primary btn-sm btn-floating" style="background-color: #000000e7;" href="#!" role="button"><i class="fab fa-github"></i></a>
+                </div>
+
+            </div>
+            <!-- Form end -->
+        </div>
     </div>
+
+    <div class="card-footer mt-5 bg-light">
+        <small class="text-muted">&copy All Right Reserve By <strong>Shahriar Mahmud Anik</strong>   @2022
+</small>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Main JS File -->
+    <script src="./index.js"></script>
+
     <!-- JavaScript Bundle with Popper -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
-
 </body>
 
 </html>
