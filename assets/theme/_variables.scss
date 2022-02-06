@@ -24,10 +24,10 @@ $bg-green: #49AF46;
 
 .rotated--hr {
     width: 100%;
-    background-color: transparent;
+    background-color: #0CBFAE;
     transform: rotate(-3deg);
     -webkit-box-shadow: 0px 0px 10px 14px rgba(10, 190, 173, 0.6);
-    box-shadow: 0px 0px 10px 14px rgba(10, 190, 173, 0.6);
+    box-shadow: 0px 0px 10px 14px rgba(5, 255, 230, 0.6);
 }
 
 .card--bg {
@@ -81,12 +81,6 @@ $bg-green: #49AF46;
 
 .txt--span {
     color: #635f5f;
-}
-
-.carousel-inner>.item>img,
-.carousel-inner>.item>a>img {
-    width: 100%;
-    margin: auto;
 }
 
 .span-font {

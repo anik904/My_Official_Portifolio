@@ -7,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Portfolio</title>
 
-    <link rel="stylesheet" href="./assets/main.scss">
-    <link rel="stylesheet" href="/assets/theme/style.css">
     <link rel="stylesheet" href="./build/main.css">
+
     <script src="anime.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 
+
     <!-- font awesome -->
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
-    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
 
 
@@ -64,9 +64,9 @@
     <!--End Navbar--->
 
 
-    <div class=" d-flex justify-content-evenly margin-lg ">
+    <div class=" d-flex avatar-container justify-content-evenly margin-lg ">
         <div class="margin-md ">
-            <h5 class=" headline-bg ">Hello, IM
+            <h5 class=" headline-bg avatar-container-text  ">Hello, IM
                 <strong class="headline-span "> Shahriar Mahmud Anik</strong>
             </h5>
             <h3 class=" headline-bg ">Frontend Developer</h3>
@@ -74,8 +74,8 @@
             <button type="button " class="btn btn-primary btn-sm rounded-pill px-4 mt-3 ">Hire Me</button>
             <button type="button " class="btn btn-warning btn-sm rounded-pill mt-3 ">Get Resume</button>
         </div>
-        <div>
-            <img class=" rounded-pill shadow-bg-dp mt-2 " style="width: 280px; height: 280px; " src="./assets/img/my cv.png " alt=" ">
+        <div class="avatar-dp">
+            <img class="avatar-dp rounded-pill shadow-bg-dp mt-2 " style="width: 280px; height: 280px; " src="./assets/img/my cv.png " alt=" ">
         </div>
     </div>
     <img class=" " style="width: 100%; height: 320px; " src="./assets/img/wave.svg " alt=" ">
@@ -93,13 +93,13 @@
             <img src="./assets/img/line.png " alt=" ">
         </div>
 
-        <div class="about--container card box-card mb-6 justify-content-between mt-5 shadow-bg h-100">
-            <div class="row ">
-                <div class="col-4">
-                    <img src="./assets/img/me.jpg " class="img-fluid rounded-start m-3 " alt="... ">
+        <div class="card mb-3 about--container mb-6 justify-content-between mt-5 shadow-bg" style="max-width: 1100px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="./assets/img/me.jpg" class="img-fluid rounded-start" alt="...">
                 </div>
-                <div class="col-8 ">
-                    <div class="card-body mx-2">
+                <div class="col-md-8">
+                    <div class="card-body">
                         <h5 class="card-title text--font ">Why You Choose Me?</h5>
                         <p class="card-text text--font ">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's
                             De Finibus Bonorum et Malorum for use in a type specimen book.</p>
@@ -113,13 +113,11 @@
                             <button type="button " class="btn btn-primary btn-sm rounded-pill px-4 mt-5 ">Hire Me</button>
                             <button type="button " class="btn card--bg-four btn-sm rounded-pill px-4 mt-5 ">Get Resume</button>
                         </ul>
-
                     </div>
-                    </ul>
                 </div>
             </div>
-
         </div>
+
     </div>
     <div class="m-5 mt-5 ">
         <div class="text-center headline-bg mt-5 ">
@@ -295,15 +293,16 @@
     </div>
     <hr class="rotated--hr shadow-bg margin-md ">
 
-    <div class="mt-5 ">
+    <div class="mt-5">
         <div class="text-center headline-bg mt-5 ">
 
             <h3 id="service ">Portfolio</h3>
             <h6>Check in my Latest Works</h6>
             <img src="./assets/img/line.png " alt=" ">
         </div>
-        <div id="carouselExampleControls " class="m-5 carousel slide mt-5 " data-bs-ride="carousel ">
-            <div class="carousel-indicators ">
+
+        <div id="carouselExampleControls " class="m-5 carousel slide mt-5 " data-bs-ride="carousel  ">
+            <div class="carousel-indicators">
                 <button type="button " data-bs-target="#carouselExampleControls " data-bs-slide-to="0 " class="active " aria-current="true " aria-label="Slide 1 "></button>
                 <button type="button " data-bs-target="#carouselExampleControls " data-bs-slide-to="1 " aria-label="Slide 2 "></button>
                 <button type="button " data-bs-target="#carouselExampleControls " data-bs-slide-to="2 " aria-label="Slide 3 "></button>
@@ -528,8 +527,7 @@
     <script src="./index.js "></script>
 
     <!-- JavaScript Bundle with Popper -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
