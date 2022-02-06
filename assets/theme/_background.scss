@@ -75,13 +75,10 @@
         }
     }
     
-    @media screen and (max-width: 45em) and (min-width: 25em) {
-        .container-fluid {
-            display: inline-block;
-        }
-        .contact-form {
-            display: inline-flexbox;
-            background-size: cover;
+    @media (min-width: 1020px) {
+        .about--container {
+            align-self: center;
+            margin: 0px 200px 0px 200px;
         }
     }
     
@@ -91,18 +88,13 @@
         overflow: hidden;
     }
     
-    @media screen and (max-width: 45em) and (min-width: 25em) {
+    @media screen and (max-width: 720px) and (min-width: 300px) {
         .resume--container {
             display: inline-block;
             grid-template-columns: repeat(100vw/2);
             grid-template-rows: repeat(1);
-        }
-    }
-    
-    @media screen and (max-width: 20em) {
-        .resume--container {
-            grid-template-columns: 100vw;
-            grid-template-rows: repeat(5, 1fr);
+            justify-content: center;
+            flex-direction: row;
         }
     }
     

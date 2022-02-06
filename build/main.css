@@ -3573,6 +3573,14 @@ textarea.form-control-lg { min-height: calc(1.5em + 1rem + 2px); }
 
 *body { font-family: 'Poppins', sans-serif; }
 
+.margin-lg { margin-top: 120px; }
+
+.margin-md { margin-top: 100px; }
+
+.margin-sm { margin-top: 80px; }
+
+.rotated--hr { width: 100%; background-color: transparent; transform: rotate(-3deg); -webkit-box-shadow: 0px 0px 10px 14px rgba(10, 190, 173, 0.6); box-shadow: 0px 0px 10px 14px rgba(10, 190, 173, 0.6); }
+
 .card--bg-one { background-color: #8540FF; color: white; }
 
 .card--bg-two { background-color: #FFC50C; color: white; }
@@ -3585,33 +3593,9 @@ textarea.form-control-lg { min-height: calc(1.5em + 1rem + 2px); }
 
 .card--bg-six { background-color: #49AF46; color: white; }
 
-#card-user { transition: all 0.6s ease; display: inline-block; cursor: pointer; width: 300px; height: 160px; border-radius: 5px; background-color: #ecf0f1; overflow: hidden; color: #34495e; }
+.shadow-bg { -webkit-box-shadow: 0px 9px 26px 14px rgba(10, 190, 173, 0.28); box-shadow: 0px 9px 20px 14px rgba(10, 190, 173, 0.28); box-shadow: inset; }
 
-#card-user .header { transition: all 0.6s ease; width: 100%; height: 70px; background-color: #2c3e50; }
-
-#card-user .header h3, #card-user .header .h3 { width: 100%; }
-
-#card-user .avatar { transition: all 0.6s ease; width: 90px; height: 90px; border-radius: 50%; background-color: #ecf0f1; border: 3px solid #ecf0f1; display: inline-block; margin-top: -55px; overflow: hidden; }
-
-#card-user .avatar img { width: 100%; }
-
-#card-user .text { width: auto; padding: 10px; justify-content: center; }
-
-#card-user .text h3, #card-user .text .h3 { margin: 7px 0; transition: all 0.6s ease; }
-
-#card-user .text p { line-height: 1.2em; text-align: justify; margin: 20px 0 30px 0; }
-
-#card-user .social { padding: 5% 0; background-color: #2c3e50; color: #fff; }
-
-#card-user .social i { padding: 0 5%; font-size: 1.2em; }
-
-#card-user .social i:hover { transition: all 0.6s ease-out; }
-
-#card-user:hover { height: 300px; transition: all 0.6s ease; }
-
-#card-user:hover .header { transition: all 0.6s ease; }
-
-#card-user:hover .avatar { background-color: #efefef; transition: all 0.6s ease; }
+.shadow-bg-dp { -webkit-box-shadow: 0px 0px 10px 16px rgba(10, 190, 173, 0.18); box-shadow: 0px 0px 10px 16px rgba(10, 190, 173, 0.18); border-radius: 2px; }
 
 body, html { margin: 0; padding: 0; }
 
@@ -3635,11 +3619,8 @@ a { color: #172535; text-decoration: none; }
 
 .card--glass-third { backdrop-filter: blur(6px) saturate(114%); -webkit-backdrop-filter: blur(6px) saturate(114%); background-color: rgba(10, 190, 173, 0.61); border-radius: 12px; border: 1px solid rgba(209, 213, 219, 0.3); }
 
-@media screen and (max-width: 45em) and (min-width: 25em) { .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl { display: inline-block; }
-  .contact-form { display: inline-flexbox; background-size: cover; } }
+@media (min-width: 1020px) { .about--container { align-self: center; margin: 0px 200px 0px 200px; } }
 
 .resume--container { display: grid; height: min-content; overflow: hidden; }
 
-@media screen and (max-width: 45em) and (min-width: 25em) { .resume--container { display: inline-block; grid-template-columns: repeat(100vw/2); grid-template-rows: repeat(1); } }
-
-@media screen and (max-width: 20em) { .resume--container { grid-template-columns: 100vw; grid-template-rows: repeat(5, 1fr); } }
+@media screen and (max-width: 720px) and (min-width: 300px) { .resume--container { display: inline-block; grid-template-columns: repeat(100vw/2); grid-template-rows: repeat(1); justify-content: center; flex-direction: row; } }
