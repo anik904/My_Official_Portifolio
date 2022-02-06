@@ -1,69 +1,14 @@
 /* @import "node_modules/lib/anime.es.js"; */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
 *body {
     width: 100%;
 }
 
-.index-bg {
+
+/* .index-bg {
     z-index: -1;
     position: absolute;
     height: fit-content;
     width: 100%;
 }
-
-.headline-bg {
-    color: #0CBFAE;
-}
-
-.headline-span {
-    color: #F57F17;
-}
-
-.txt--span {
-    color: #635f5f;
-}
-
-.carousel-inner>.item>img,
-.carousel-inner>.item>a>img {
-    width: 100%;
-    margin: auto;
-}
-
-.container {
-    width: 980px !important;
-}
-
-.span-font {
-    font-family: 'Cookie', cursive;
-}
-
-.card-cnt {
-    box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%);
-}
-
-.card-cnt {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 0 solid rgba(0, 0, 0, .125);
-    border-radius: 1rem;
-}
-
-.img-thumbnail {
-    padding: .25rem;
-    background-color: #ecf2f5;
-    border: 1px solid #dee2e6;
-    border-radius: .25rem;
-    max-width: 100%;
-    height: auto;
-}
-
-.avatar-lg {
-    height: 150px;
-    width: 150px;
-}
+ */

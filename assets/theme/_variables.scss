@@ -1,72 +1,120 @@
- $bg-purple: #8540FF;
- $bg-yellow: #FFC50C;
- $bg-pink: #EC407A;
- $bg-orange: #F57F17;
- $bg-sky: #13B6FF;
- $bg-green: #49AF46;
- $color-background: rgba(52, 73, 94, 1.0);
- $color-header: rgba(44, 62, 80, 1.0);
- $color-card: rgba(236, 240, 241, 1.0);
- *body {
-     font-family: 'Poppins', sans-serif;
- }
- 
- .margin {
-     &-lg {
-         margin-top: 120px;
-     }
-     &-md {
-         margin-top: 100px;
-     }
-     &-sm {
-         margin-top: 80px;
-     }
- }
- 
- .rotated--hr {
-     width: 100%;
-     background-color: transparent;
-     transform: rotate(-3deg);
-     -webkit-box-shadow: 0px 0px 10px 14px rgba(10, 190, 173, 0.6);
-     box-shadow: 0px 0px 10px 14px rgba(10, 190, 173, 0.6);
- }
- 
- .card--bg {
-     &-one {
-         background-color: $bg-purple;
-         color: white;
-     }
-     &-two {
-         background-color: $bg-yellow;
-         color: white;
-     }
-     &-three {
-         background-color: $bg-pink;
-         color: white;
-     }
-     &-four {
-         background-color: $bg-orange;
-         color: white;
-     }
-     &-five {
-         background-color: $bg-sky;
-         color: white;
-     }
-     &-six {
-         background-color: $bg-green;
-         color: white;
-     }
- }
- 
- .shadow {
-     &-bg {
-         -webkit-box-shadow: 0px 9px 26px 14px rgba(10, 190, 173, 0.28);
-         box-shadow: 0px 9px 20px 14px rgba(10, 190, 173, 0.28);
-         box-shadow: inset;
-     }
-     &-bg-dp {
-         -webkit-box-shadow: 0px 0px 10px 16px rgba(10, 190, 173, 0.18);
-         box-shadow: 0px 0px 10px 16px rgba(10, 190, 173, 0.18);
-         border-radius: 2px;
-     }
- }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
+$bg-purple: #8540FF;
+$bg-yellow: #FFC50C;
+$bg-pink: #EC407A;
+$bg-orange: #F57F17;
+$bg-sky: #13B6FF;
+$bg-green: #49AF46;
+*body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+
+.margin {
+    &-lg {
+        margin-top: 120px;
+    }
+    &-md {
+        margin-top: 100px;
+    }
+    &-sm {
+        margin-top: 80px;
+    }
+}
+
+.rotated--hr {
+    width: 100%;
+    background-color: transparent;
+    transform: rotate(-3deg);
+    -webkit-box-shadow: 0px 0px 10px 14px rgba(10, 190, 173, 0.6);
+    box-shadow: 0px 0px 10px 14px rgba(10, 190, 173, 0.6);
+}
+
+.card--bg {
+    &-one {
+        background-color: $bg-purple;
+        color: white;
+    }
+    &-two {
+        background-color: $bg-yellow;
+        color: white;
+    }
+    &-three {
+        background-color: $bg-pink;
+        color: white;
+    }
+    &-four {
+        background-color: $bg-orange;
+        color: white;
+    }
+    &-five {
+        background-color: $bg-sky;
+        color: white;
+    }
+    &-six {
+        background-color: $bg-green;
+        color: white;
+    }
+}
+
+.shadow {
+    &-bg {
+        -webkit-box-shadow: 0px 9px 26px 14px rgba(10, 190, 173, 0.28);
+        box-shadow: 0px 9px 20px 14px rgba(10, 190, 173, 0.28);
+        box-shadow: inset;
+    }
+    &-bg-dp {
+        -webkit-box-shadow: 0px 0px 10px 16px rgba(10, 190, 173, 0.18);
+        box-shadow: 0px 0px 10px 16px rgba(10, 190, 173, 0.18);
+        border-radius: 2px;
+    }
+}
+
+.headline {
+    &-bg {
+        color: #0CBFAE;
+    }
+    &-span {
+        color: #F57F17;
+    }
+}
+
+.txt--span {
+    color: #635f5f;
+}
+
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+    width: 100%;
+    margin: auto;
+}
+
+.span-font {
+    font-family: 'Cookie', cursive;
+}
+
+.card-cnt {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0, 0, 0, .125);
+    border-radius: 1rem;
+}
+
+.img-thumbnail {
+    padding: .25rem;
+    background-color: #ecf2f5;
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.avatar-lg {
+    height: 150px;
+    width: 150px;
+}
