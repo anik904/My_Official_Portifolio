@@ -25,6 +25,7 @@ $bg-green: #49AF46;
 .rotated--hr {
     width: 100%;
     background-color: #0CBFAE;
+    border-top: 3px solid #0CBFAE;
     transform: rotate(-3deg);
     -webkit-box-shadow: 0px 0px 10px 14px rgba(10, 190, 173, 0.6);
     box-shadow: 0px 0px 10px 14px rgba(5, 255, 230, 0.6);
@@ -111,4 +112,126 @@ $bg-green: #49AF46;
 .avatar-lg {
     height: 150px;
     width: 150px;
+}
+
+.carousel .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+// learn more button
+
+/* From cssbuttons.io by @westitan */
+
+button {
+    position: relative;
+    padding: 15px 30px;
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border: none;
+}
+
+button span {
+    position: relative;
+    color: #fff;
+    font-family: Arial;
+    letter-spacing: 4px;
+    z-index: 1;
+}
+
+button .liquid {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: #4973ff;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: .7s;
+}
+
+button .liquid::after,
+button .liquid::before {
+    content: '';
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #fff;
+}
+
+button .liquid::before {
+    border-radius: 45%;
+    background: rgba(20, 20, 20, 1);
+    animation: animate 5s linear infinite;
+}
+
+button .liquid::after {
+    border-radius: 40%;
+    background: rgba(20, 20, 20, .5);
+    animation: animate 10s linear infinite;
+}
+
+button:hover .liquid {
+    top: -120px;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}
+
+///////////
+$spacing: 1rem;
+$themeColor: #63B8FF;
+$backColor: #ddd;
+$textShadow: rgba(black,
+0.35) 1px 1px 1px;
+.progress--circle {
+    position: relative;
+    display: inline-block;
+    margin: $spacing;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: $backColor;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-color: white;
+    }
+    &:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: $themeColor;
+    }
+}
+
+.progress__number {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    line-height: 1;
+    margin-top: -0.75rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #777;
 }
