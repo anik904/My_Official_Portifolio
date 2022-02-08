@@ -88,7 +88,7 @@
         overflow: hidden;
     }
     
-    @media screen and (max-width: 720px) and (min-width: 300px) {
+    @media screen and (max-width: 720px) and (min-width: 320px) {
         .resume--container {
             display: inline-block;
             grid-template-columns: repeat(100vw/2);
@@ -110,6 +110,11 @@
         .avatar-dp {
             margin-top: 50px;
             display: none;
+        }
+        .s-card {
+            width: 250px;
+            height: fit-content;
+            justify-content: center;
         }
     }
     

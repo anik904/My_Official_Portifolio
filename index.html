@@ -24,7 +24,7 @@
 </head>
 
 <body onload="typeHead()">
-    <nav class="navbar navbar-expand-lg navbar-light shadow-bg">
+    <nav class="navbar navbar-expand-lg navbar-light shadow-bg" id="navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="./assets/img/project.svg" alt="" width="40" height="30">
@@ -36,22 +36,22 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                     <li class="nav-item ">
-                        <a class="nav-link active " aria-current="page " href="# ">Home</a>
+                        <a class="nav-link active " aria-current="page " href="#">Home</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="# "><span class="sr-only "></span>About Me</a>
+                        <a class="nav-link " href="#aboutMe">About Me</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="# ">Resume</a>
+                        <a class="nav-link " href="#resume">Resume</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="# ">Service</a>
+                        <a class="nav-link " href="#service">Services</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link disabled ">Portfolio</a>
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link disabled ">Contact</a>
+                        <a class="nav-link " href="#contact">Contacts</a>
                     </li>
 
                 </ul>
@@ -73,7 +73,7 @@
             </h4>
             <h3 class=" headline-bg ">Frontend Developer</h3>
 
-            <span class="txt--span ">Freelancer Web/ Mobile UI/UX Designer with Motion Graphics</span> <br>
+            <span class="txt--span ">( HTML | CSS/SASS | Bootstrap | JavaScript )</span> <br>
             <!-- <p id="demo "></p> -->
             <button onload="typeWriter() " type="button " class="btn btn-primary btn-sm rounded-pill px-4 mt-3 ">Hire Me</button>
             <button type="button " class="btn btn-warning btn-sm rounded-pill mt-3 ">Get Resume</button>
@@ -90,7 +90,7 @@
 
 
 
-    <div class=" ">
+    <div class=" " id="aboutMe">
         <div class="text-center headline-bg ">
             <h3>About Me</h3>
             <h6>Why Choose Me?</h6>
@@ -104,8 +104,8 @@
                 </div>
                 <div class="col-md-8 ">
                     <div class="card-body ">
-                        <h5 class="card-title text--font span-font ">Why You Choose Me?</h5>
-                        <p id="about_me" class="span-font ">Hello, I am <b class="headline-span "> Shahriar Mahmud Anik</b>, I study at the Independent University Bangladesh in Computer Science and Engineering(CSE) department. </p>
+                        <h5 class="card-title span-font ">Why You Choose Me?</h5>
+                        <p id="about_me" class="span-font txt--span">Hello, I am <b class="headline-span "> Shahriar Mahmud Anik</b>, I study at the Independent University Bangladesh in Computer Science and Engineering(CSE) department. </p>
                         <button onclick="typeWriter() " type="button " class="btn btn-primary btn-sm rounded-pill px-4 mt-5 ">
   <span>Click Me</span>
   <div class="liquid "></div>
@@ -163,7 +163,7 @@
     <div class="m-5 mt-5 ">
         <div class="text-center headline-bg mt-5 ">
 
-            <h3 id="service ">Services</h3>
+            <h3 id="service">Services</h3>
             <h6>What We Provide You ?</h6>
             <img src="./assets/img/line.png " alt=" ">
         </div>
@@ -239,7 +239,7 @@
         <div class="text-center mt-4 ">
             <div class="text-center headline-bg mt-5 ">
 
-                <h3 id="service ">Resume</h3>
+                <h3 id="resume">Resume</h3>
                 <h6>My formal Bio Details</h6>
                 <img src="./assets/img/line.png " alt=" ">
             </div>
@@ -337,7 +337,7 @@
     <div class="mt-5 ">
         <div class="text-center headline-bg mt-5 ">
 
-            <h3 id="service ">Portfolio</h3>
+            <h3 id="portfolio">Portfolio</h3>
             <h6>Check in my Latest Works</h6>
             <img src="./assets/img/line.png " alt=" ">
         </div>
@@ -473,7 +473,7 @@
 
     </div>
     <hr class="rotated--hr shadow-bg margin-md ">
-    <div class="text-center headline-bg mt-5 ">
+    <div class="text-center headline-bg mt-5 " id="contact">
         <h3>Contact Me</h3>
         <h6>Let's Keep In Touch</h6>
         <img src="./assets/img/line.png " alt=" ">
@@ -484,7 +484,7 @@
 
         <!-- Form start -->
         <div class="m-5 d-flex margin--sm card--glass-first justify-content-around shadow-bg ">
-            <div class="row justify-content-center ">
+            <div class="row justify-content-center s-card">
 
                 <div class="col-md-5 m-3 p-3 ">
                     <div class="card-cnt ">
@@ -493,10 +493,10 @@
                             <h5 class="text-info ">Shahriar Mahmud Anik</h5>
                             <span>Social Media</span>
                             <div class="d-flex mt-3 justify-content-center ">
-                                <a class="btn btn-md btn-floating " href="#! " role="button "><i class="fab fa-instagram fa-2x "></i></a>
-                                <a class="btn btn-md btn-floating " href="#! " role="button "><i class="fab fa-facebook fa-2x "></i></a>
-                                <a class="btn btn-md btn-floating " href="#! " role="button "><i class="fab fa-linkedin fa-2x "></i></a>
-                                <a class="btn btn-md btn-floating " href="#! " role="button "><i class="fab fa-github fa-2x "></i></a>
+                                <a class="btn btn-md btn-floating " href="https://www.instagram.com/shahriar_mahmud_anik/" role="button " target="_blank"><i class="fab fa-instagram fa-2x "></i></a>
+                                <a class="btn btn-md btn-floating " href="https://www.facebook.com/shahriarmahmud.anik" role="button " target="_blank"><i class="fab fa-facebook fa-2x "></i></a>
+                                <a class="btn btn-md btn-floating " href="https://www.linkedin.com/in/sm-anik/" role="button " target="_blank"><i class="fab fa-linkedin fa-2x "></i></a>
+                                <a class="btn btn-md btn-floating " href="https://github.com/anik904" role="button " target="_blank"><i class="fab fa-github fa-2x "></i></a>
                             </div>
                         </div>
                     </div>
@@ -531,7 +531,7 @@
                             <div class="col-md-12 ">
                                 <input type="email " class="form-control form-control-sm rounded p-4 " id="colFormLabelSm " placeholder="Your Questions Write Here... ">
                             </div>
-                            <div class="d-grid gap-2 col-6 mx-auto btn-lg btn-block ">
+                            <div class=" ">
                                 <button class="btn btn-info mt-4 px-5 rounded-pill " type="button ">Submit</button>
 
                             </div>
