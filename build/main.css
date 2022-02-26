@@ -3594,6 +3594,8 @@ textarea.form-control-lg { min-height: calc(1.5em + 1rem + 2px); }
 
 .card--bg-six { background-color: #49AF46; color: white; }
 
+.blinking-cursor { font-weight: 500; margin-left: 4px; font-size: 20px; color: white !important; -webkit-animation: 1s blink step-end infinite; -moz-animation: 1s blink step-end infinite; -ms-animation: 1s blink step-end infinite; -o-animation: 1s blink step-end infinite; animation: 1s blink step-end infinite; }
+
 .shadow-bg { -webkit-box-shadow: 0px 9px 26px 14px rgba(10, 190, 173, 0.28); box-shadow: 0px 9px 20px 14px rgba(10, 190, 173, 0.28); box-shadow: inset; }
 
 .shadow-bg-dp { -webkit-box-shadow: 0px 0px 10px 16px rgba(10, 190, 173, 0.18); box-shadow: 0px 0px 10px 16px rgba(10, 190, 173, 0.18); border-radius: 2px; }
@@ -3670,4 +3672,6 @@ a { color: #172535; text-decoration: none; }
   .avatar-container { display: inline-block; flex-flow: column; justify-content: center; align-content: center; align-self: center; margin: 50px; }
   .avatar-container-text { font-size: 40px; }
   .avatar-dp { margin-top: 50px; display: none; }
-  .s-card { width: 250px; height: fit-content; justify-content: center; } }
+  .s-card { width: 280px; height: fit-content; justify-content: center; }
+  .map-responsive { overflow: hidden; padding-bottom: 56.25%; position: relative; height: 0; }
+  .map-responsive iframe { left: 0; top: 0; height: 100%; width: 100%; position: absolute; } }

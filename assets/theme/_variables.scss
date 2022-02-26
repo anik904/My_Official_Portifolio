@@ -58,6 +58,18 @@ $bg-green: #49AF46;
     }
 }
 
+.blinking-cursor {
+    font-weight: 500;
+    margin-left: 4px;
+    font-size: 20px;
+    color: white !important;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+
 .shadow {
     &-bg {
         -webkit-box-shadow: 0px 9px 26px 14px rgba(10, 190, 173, 0.28);
