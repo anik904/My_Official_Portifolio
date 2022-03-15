@@ -58,6 +58,21 @@ $bg-green: #49AF46;
     }
 }
 
+.font {
+    &--hdl {
+        font-family: 'Anton', sans-serif;
+        color: #0CBFAE;
+        line-height: 67px;
+        font-weight: bold;
+        font-size: 40px;
+    }
+}
+
+// headline button
+
+/* From cssbuttons.io */
+
+////end
 .blinking-cursor {
     font-weight: 500;
     margin-left: 4px;
@@ -247,3 +262,64 @@ $textShadow: rgba(black,
     font-size: 1.5rem;
     color: #777;
 }
+
+// loading
+// .overlay {
+//     display: none;
+//     position: fixed;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//     z-index: 999;
+//     background: rgba(255, 255, 255, 0.8) url("https://flevix.com/wp-content/uploads/2019/07/Ring-Loading-feature.gif") center;
+// }
+.ripple {
+    width: 1rem;
+    /* control the size */
+    background: #ffff;
+    /* control the color here */
+}
+
+.ripple,
+.ripple::before,
+.ripple::after {
+    content: "";
+    display: grid;
+    grid-area: 1/1;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 #000;
+    /* and here, 3 is the transparency */
+    animation: r 3s linear infinite var(--s, 0s);
+}
+
+.ripple::before {
+    --s: 1s
+}
+
+.ripple::after {
+    --s: 2s
+}
+
+@keyframes r {
+    to {
+        box-shadow: 0 0 0 6rem #0000
+    }
+}
+
+.ripple-body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11rem;
+    background: #ffff;
+}
+
+
+/* Turn off scrollbar when body element has the loading class */
+
+
+/* Make spinner image visible when body element has the loading class */

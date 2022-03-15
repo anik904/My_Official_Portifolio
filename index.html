@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="./build/main.css">
 
     <!-- <script src="anime.min.js"></script> -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script> -->
-
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- font awesome -->
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -26,39 +26,39 @@
 <body onload="typeHead()">
     <nav class="navbar navbar-expand-lg navbar-light shadow-bg" id="navbar">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/img/project.svg" alt="" width="40" height="30">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/img/Anik 6 (1).png" alt="" width="40" height="30">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
             <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ov">
 
                     <li class="nav-item ">
-                        <a class="nav-link active " aria-current="page " href="#">Home</a>
+                        <a class="nav-link active" id="loadR" aria-current="page " href="index.html">Home</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="#aboutMe">About Me</a>
+                        <a class="nav-link active " href="#aboutMe">About Me</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="#resume">Resume</a>
+                        <a class="nav-link active" href="#resume">Resume</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="#service">Services</a>
+                        <a class="nav-link active" href="#service">Services</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                        <a class="nav-link active" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="#contact">Contacts</a>
+                        <a class="nav-link active" href="#contact">Contacts</a>
                     </li>
 
                 </ul>
 
-                <span class="navbar-text">
-          Hello , Good People
-        </span>
+                <b class="navbar-text ml2">
+          <i>Hello , Good People</i>
+                </b>
             </div>
         </div>
     </nav>
@@ -73,12 +73,13 @@
                 <strong class="headline-span " id="head"> </strong>
             </h4>
             <h3 class=" headline-bg">Frontend Developer</h3>
-
-
-            <span class="txt--span ">( HTML | CSS/SASS | Bootstrap | JavaScript )</span> <br>
+            <span class="txt--span">(HTML | CSS/SASS | Bootstrap | JavaScript)</span> <br>
+            <!-- <span id="loadR">
+<i class="fa fa-spinner fa-4x fa-spin"></i>
+</span> -->
             <!-- <p id="demo "></p> -->
-            <button onload="typeWriter() " type="button " class="btn btn-primary btn-sm rounded-pill px-4 mt-3 ">Hire Me</button>
-            <button type="button " class="btn btn-warning btn-sm rounded-pill mt-3 ">Get Resume</button>
+            <button type="button " class="btn btn-primary btn-sm rounded-pill px-4 mt-3" id="loadR"> <a class=" text-light " href="mailto:shahriarmahmud904@gmail.com" target="_blank">Hire Me</a></button>
+            <button type="button " class="btn btn-warning btn-sm rounded-pill mt-3 "> <a type="button" class="text-black " href="https://drive.google.com/drive/folders/1-HF6rx92A_JDvriS1zNw7bAEEX8kM_8V?usp=sharing" target="_blank"> Get Resume</a></button>
         </div>
         <div class="avatar-dp ">
             <img class="avatar-dp rounded-pill shadow-bg-dp mt-2 " style="width: 280px; height: 280px; " src="./assets/img/my cv.png " alt=" ">
@@ -95,7 +96,7 @@
     <div class=" " id="aboutMe">
         <div class="text-center headline-bg ">
             <h3>About Me</h3>
-            <h6>Why Choose Me?</h6>
+            <h6></h6>
             <img src="./assets/img/line.png " alt=" ">
         </div>
 
@@ -106,11 +107,14 @@
                 </div>
                 <div class="col-md-8 ">
                     <div class="card-body ">
-                        <h5 class="card-title span-font ">Why You Choose Me?</h5>
-                        <p id="about_me" class="span-font txt--span">Hello, I am <b class="headline-span "> Shahriar Mahmud Anik</b>, I study at the Independent University Bangladesh in Computer Science and Engineering(CSE) department. </p>
+                        <h2 class="card-title font--hdl">Me,Myself and I</h2>
+
+                        <p id="about_me" class="span-font txt--span ">Hello, I am <b class="headline-span "> Shahriar Mahmud Anik</b>, I study at the Independent University Bangladesh in Computer Science and Engineering(CSE) department. </p>
                         <button onclick="typeWriter() " type="button " class="btn btn-primary btn-sm rounded-pill px-4 mt-5 ">
   <span>Click Me</span>
+
   <div class="liquid "></div>
+
 </button>
 
                         <!-- <button onmouseover="typeWriter() " type="button " class="btn btn-primary btn-sm rounded-pill px-4 mt-5 ">Learn More</button> -->
@@ -358,31 +362,31 @@
             <!-- The slideshow/carousel -->
             <div class="carousel-inner rounded-3">
                 <div class="carousel-item active">
-                    <img src="https://soliloquywp.com/wp-content/uploads/2019/04/nb_esc_cover.jpg " alt="Los Angeles" class="d-block" style="width:100%">
+                    <img src="./assets/img/sld-1.jpeg" alt="Los Angeles" class="d-block" style="width:100%">
                     <div class="carousel-caption d-none d-md-block ">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <!-- <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p> -->
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="https://soliloquywp.com/wp-content/uploads/2019/04/nb_esc_cover.jpg " alt="Chicago" class="d-block" style="width:100%">
+                    <img src="./assets/img/sld-2.jpeg" alt="Chicago" class="d-block" style="width:100%">
                     <div class="carousel-caption d-none d-md-block ">
-                        <h5>Two slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <!-- <h5>Two slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p> -->
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="https://smartslider3.com/wp-content/uploads/2018/08/whatisaslider-1.png " alt="New York" class="d-block" style="width:100%">
+                    <img src="./assets/img/sld-3.jpeg" alt="New York" class="d-block" style="width:100%">
                     <div class="carousel-caption d-none d-md-block ">
-                        <h5>Three slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <!-- <h5>Three slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p> -->
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="https://soliloquywp.com/wp-content/uploads/2019/04/nb_esc_cover.jpg " alt="New York" class="d-block" style="width:100%">
+                    <img src="./assets/img/sld-4.jpeg " alt="New York" class="d-block" style="width:100%">
                     <div class="carousel-caption d-none d-md-block ">
-                        <h5>Four slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <!-- <h5>Four slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p> -->
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -424,9 +428,37 @@
                         <p class="card-text ">Only PSD Design</p>
 
                     </div>
-                    <div class="card-body ">
+                    <div class="card-body shadow-bg">
                         <!-- <h5 class="card-title ">Card title</h5> -->
-                        <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Here i am offering a basic page plan ), feel free to connect me, for more details contact me.</p>
+                        <hr>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">HTML & CSS</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">Bootstrap 5</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">Basic Page Design</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">Responsive Design</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">Source File</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">One Page Template </label>
+                        </div>
+
+
                     </div>
                     <!-- <div class="card-footer ">
                             <small class="text-muted ">Last updated 3 mins ago</small>
@@ -443,9 +475,34 @@
                             <p class="card-text ">Only PSD Design</p>
                         </div>
                     </div>
-                    <div class="card-body ">
-                        <!-- <h5 class="card-title ">Card title</h5> -->
-                        <p class="card-text ">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <div class="card-body shadow-bg">
+                        <p class="card-text">Here i am offering a basic page plan ), feel free to connect me, for more details contact me.</p>
+                        <hr>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">HTML & CSS</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">Bootstrap 5</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">Basic Page Design</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">Responsive Design</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">Source File</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">One Page Template </label>
+                        </div>
                     </div>
                     <!-- <div class="card-footer ">
                             <small class="text-muted ">Last updated 3 mins ago</small>
@@ -462,9 +519,35 @@
                             <p class="card-text ">Only PSD Design</p>
                         </div>
                     </div>
-                    <div class="card-body ">
+                    <div class="card-body shadow-bg ">
                         <!-- <h5 class="card-title ">Card title</h5> -->
-                        <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <p class="card-text">Here i am offering a basic page plan ), feel free to connect me, for more details contact me.</p>
+                        <hr>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">HTML & CSS</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">Bootstrap 5</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">Basic Page Design</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">Responsive Design</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">Source File</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">One Page Template </label>
+                        </div>
                     </div>
                     <!-- <div class="card-footer ">
                             <small class="text-muted ">Last updated 3 mins ago</small>
