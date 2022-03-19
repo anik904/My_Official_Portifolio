@@ -3574,6 +3574,10 @@ textarea.form-control-lg { min-height: calc(1.5em + 1rem + 2px); }
 
 *body { font-family: 'Poppins', sans-serif; width: 100%; }
 
+.nav-link { color: #13B6FF !important; }
+
+.logo-top { position: relative; max-height: 45px; width: 100px; background-size: contain; padding: -100px; }
+
 .margin-lg { margin-top: 120px; }
 
 .margin-md { margin-top: 100px; }
@@ -3607,7 +3611,7 @@ textarea.form-control-lg { min-height: calc(1.5em + 1rem + 2px); }
 
 .headline-span { color: #F57F17; }
 
-.txt--span { color: #635f5f; }
+.txt--span { color: #8d8d8d; }
 
 .span-font { font-family: 'Open Sans Condensed', sans-serif; }
 
@@ -3659,8 +3663,10 @@ button:hover .liquid { top: -120px; }
 
 .ripple-body { margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center; gap: 11rem; background: #ffff; }
 
-/* Turn off scrollbar when body element has the loading class */
-/* Make spinner image visible when body element has the loading class */
+.dark-mode { background-color: #2A272A; color: #ffffff; }
+
+#btn-back-to-top { position: fixed; bottom: 20px; right: 20px; display: none; }
+
 body, html { margin: 0; padding: 0; }
 
 a { color: #172535; text-decoration: none; }

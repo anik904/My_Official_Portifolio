@@ -24,16 +24,16 @@
 </head>
 
 <body onload="typeHead()">
-    <nav class="navbar navbar-expand-lg navbar-light shadow-bg" id="navbar">
+    <nav class="navbar navbar-light navbar-expand-lg shadow-bg " id="navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img src="./assets/img/Anik 6 (1).png" alt="" width="40" height="30">
+                <img src="./assets/img/anik_logo_up1.png" alt="" class="logo-top">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
             <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ov">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                     <li class="nav-item ">
                         <a class="nav-link active" id="loadR" aria-current="page " href="index.html">Home</a>
@@ -55,10 +55,16 @@
                     </li>
 
                 </ul>
-
-                <b class="navbar-text ml2">
+                <!-- 
+                <b class="navbar-text ml2 px-4">
           <i>Hello , Good People</i>
-                </b>
+                </b> -->
+
+                <div class="form-check form-switch">
+                    <input onclick="myFunction()" class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Dark Mode</label>
+                </div>
+
             </div>
         </div>
     </nav>
@@ -73,7 +79,7 @@
                 <strong class="headline-span " id="head"> </strong>
             </h4>
             <h3 class=" headline-bg">Frontend Developer</h3>
-            <span class="txt--span">(HTML | CSS/SASS | Bootstrap | JavaScript)</span> <br>
+            <span class="txt--span ml2">(HTML | CSS/SASS | Bootstrap | JavaScript)</span> <br>
             <!-- <span id="loadR">
 <i class="fa fa-spinner fa-4x fa-spin"></i>
 </span> -->
@@ -419,7 +425,7 @@
 
         <div class="row row-cols-1 row-cols-md-3 g-4 mt-4 m-5 ">
             <div class="col ">
-                <div class="card h-100 ">
+                <div class="card h-100 shadow-bg ">
                     <div class="text-center card--bg-four p-3 ">
                         <img class="mt-3 " style="width: 50px; height: 50px; " src="./assets/img/basic-needs.png " class="card-img-top " alt="... ">
 
@@ -428,36 +434,39 @@
                         <p class="card-text ">Only PSD Design</p>
 
                     </div>
-                    <div class="card-body shadow-bg">
+                    <div class="card-body ">
                         <!-- <h5 class="card-title ">Card title</h5> -->
                         <p class="card-text">Here i am offering a basic page plan ), feel free to connect me, for more details contact me.</p>
                         <hr>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">HTML & CSS</label>
-                        </div>
+                        <div class=" ">
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">Bootstrap 5</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">Basic Page Design</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">Responsive Design</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">Source File</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">One Page Template </label>
-                        </div>
+                            <ul class="list-unstyled my-5 text-small text-left text-dark">
+                                <li class="mb-3">
+                                    <i class="fa fa-check mr-2 text-primary"></i> HTML & CSS</li>
+                                <li class="mb-3">
+                                    <i class="fa fa-check mr-2 text-primary"></i> Bootstrap 5</li>
+                                <li class="mb-3">
+                                    <i class="fa fa-check mr-2 text-primary"></i> Basic Page Design</li>
+                                <li class="mb-3 ">
+                                    <i class="fa fa-check mr-2 text-primary"></i>
+                                    <del></del>One Page Template
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fa fa-check mr-2 text-primary"></i>
+                                    <del></del>Source File
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fa fa-check mr-2 text-primary"></i>
+                                    <del></del>Revision 1 times
+                                </li>
+                                <li class="mb-3 text-muted">
+                                    <i class="fa fa-times mr-2"></i>
+                                    <del>Not One more Pages</del>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-primary btn-block px-4 shadow rounded-pill">Contact Us</a>
 
+                        </div>
 
                     </div>
                     <!-- <div class="card-footer ">
@@ -466,7 +475,7 @@
                 </div>
             </div>
             <div class="col ">
-                <div class="card h-100 ">
+                <div class="card h-100 shadow-bg ">
                     <div class="text-center card--bg-one p-3 ">
                         <img class="mt-3 " style="width: 50px; height: 50px; " src="./assets/img/standard.png " class="card-img-top " alt="... ">
                         <div class=" ">
@@ -475,33 +484,37 @@
                             <p class="card-text ">Only PSD Design</p>
                         </div>
                     </div>
-                    <div class="card-body shadow-bg">
+                    <div class="card-body ">
                         <p class="card-text">Here i am offering a basic page plan ), feel free to connect me, for more details contact me.</p>
                         <hr>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">HTML & CSS</label>
-                        </div>
+                        <div class=" ">
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">Bootstrap 5</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">Basic Page Design</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">Responsive Design</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">Source File</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">One Page Template </label>
+                            <ul class="list-unstyled my-5 text-small text-left text-dark">
+                                <li class="mb-3">
+                                    <i class="fa fa-check mr-2 text-primary"></i> HTML & CSS</li>
+                                <li class="mb-3">
+                                    <i class="fa fa-check mr-2 text-primary"></i> Bootstrap 5</li>
+                                <li class="mb-3">
+                                    <i class="fa fa-check mr-2 text-primary"></i> Basic Page Design</li>
+                                <li class="mb-3 ">
+                                    <i class="fa fa-check mr-2 text-primary"></i>
+                                    <del></del>Two / Three Page Template
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fa fa-check mr-2 text-primary"></i>
+                                    <del></del>Source File
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fa fa-check mr-2 text-primary"></i>
+                                    <del></del>Revision 3 times
+                                </li>
+                                <li class="mb-3 text-muted">
+                                    <i class="fa fa-times mr-2"></i>
+                                    <del>Not One more Pages</del>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-primary btn-block px-4 shadow rounded-pill">Contact Us</a>
+
                         </div>
                     </div>
                     <!-- <div class="card-footer ">
@@ -509,8 +522,8 @@
                         </div> -->
                 </div>
             </div>
-            <div class="col ">
-                <div class="card h-100 ">
+            <div class="col">
+                <div class="card h-100 shadow-bg ">
                     <div class="text-center card--bg-three p-3 ">
                         <img class="mt-3 " style="width: 50px; height: 50px; " src="./assets/img/premium.png " class="card-img-top " alt="... ">
                         <div class=" ">
@@ -519,9 +532,51 @@
                             <p class="card-text ">Only PSD Design</p>
                         </div>
                     </div>
-                    <div class="card-body shadow-bg ">
-                        <!-- <h5 class="card-title ">Card title</h5> -->
+                    <div class="card-body">
                         <p class="card-text">Here i am offering a basic page plan ), feel free to connect me, for more details contact me.</p>
+                        <hr>
+                        <!-- Pricing Table-->
+                        <div class=" ">
+
+                            <ul class="list-unstyled my-5 text-small text-left text-dark">
+                                <li class="mb-3">
+                                    <i class="fa fa-check mr-2 text-primary"></i> HTML & CSS</li>
+                                <li class="mb-3">
+                                    <i class="fa fa-check mr-2 text-primary"></i> Bootstrap 5</li>
+                                <li class="mb-3">
+                                    <i class="fa fa-check mr-2 text-primary"></i> Basic Page Design</li>
+                                <li class="mb-3 ">
+                                    <i class="fa fa-check mr-2 text-primary"></i>
+                                    <del></del>Four / Five Page Template
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fa fa-check mr-2 text-primary"></i>
+                                    <del></del>Source File
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fa fa-check mr-2 text-primary"></i>
+                                    <del></del>Revision 5 times
+                                </li>
+                                <li class="mb-3 text-muted">
+                                    <i class="fa fa-times mr-2"></i>
+                                    <del>Not One more Pages</del>
+                                </li>
+                            </ul>
+                            </ul>
+                            <a href="#" class="btn btn-primary btn-block px-4 shadow rounded-pill">Contact Us</a>
+
+                        </div>
+                        <!-- END -->
+
+
+
+                        <!-- END -->
+
+                    </div>
+
+
+                    <!-- <h5 class="card-title ">Card title</h5> -->
+                    <!-- <p class="card-text">Here i am offering a basic page plan ), feel free to connect me, for more details contact me.</p>
                         <hr>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
@@ -547,14 +602,14 @@
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                             <label class="form-check-label" for="flexCheckChecked">One Page Template </label>
-                        </div>
-                    </div>
-                    <!-- <div class="card-footer ">
-                            <small class="text-muted ">Last updated 3 mins ago</small>
                         </div> -->
                 </div>
+                <!-- <div class="card-footer ">
+                            <small class="text-muted ">Last updated 3 mins ago</small>
+                        </div> -->
             </div>
         </div>
+    </div>
 
     </div>
     <hr class="rotated--hr shadow-bg margin-md ">
@@ -658,9 +713,12 @@
 
 
 
+    <!-- <a href="#" class="btn btn-info btn-block px-4 shadow rounded-pill align-content-lg-end"> <i class="fas fa-arrow-up"></i></a> -->
 
 
-
+    <button type="button" class="btn btn-info btn-floating  rounded-pill" id="btn-back-to-top">
+  <i class="fas fa-arrow-up"></i>
+</button>
 
     <!-- Main JS File -->
     <script src="./index.js "></script>

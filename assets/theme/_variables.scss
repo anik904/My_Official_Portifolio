@@ -10,6 +10,18 @@ $bg-green: #49AF46;
     width: 100%;
 }
 
+.nav-link {
+    color: #13B6FF !important;
+}
+
+.logo-top {
+    position: relative;
+    max-height: 45px;
+    width: 100px;
+    background-size: contain;
+    padding: -100px;
+}
+
 .margin {
     &-lg {
         margin-top: 120px;
@@ -108,7 +120,7 @@ $bg-green: #49AF46;
 }
 
 .txt--span {
-    color: #635f5f;
+    color: #8d8d8d;
 }
 
 .span-font {
@@ -318,8 +330,16 @@ $textShadow: rgba(black,
     background: #ffff;
 }
 
+//For Dark mode
+.dark-mode {
+    background-color: #2A272A;
+    color: #ffffff;
+}
 
-/* Turn off scrollbar when body element has the loading class */
-
-
-/* Make spinner image visible when body element has the loading class */
+//back to top
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
