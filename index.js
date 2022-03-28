@@ -1,10 +1,11 @@
 // gsap.to(".box-card", { duration: 1, scale: 1, y: 20, });
 // Type Write
+
 let i = 0;
 let j = 0;
 let txt = "Now im working to improve my own skill with Front-End Development and Some other section. Extremely motivated to constantly develop my skills and grow professionally, I am confident in my ability to come up with interesting ideas for developing new things.If you want to see my working progress the feel free to check out my code on Github. Have a great day!";
 let txt_head = 'Shahriar Mahmud Anik';
-let speed_head = 50;
+let speed_head = 70;
 let speed_paragraph = 40;
 
 
@@ -110,3 +111,54 @@ function backToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+//send msg
+$(document).ready(function() {
+    $("#sendBtn").click(function() {
+        $("#data").submit();
+    });
+});
+// function sendMail() {
+//     var link = "mailto:shahriarmahmud903@gmail.com" +
+//         "&subject=" + escape("This is my subject") +
+//         "&body=" + escape(document.getElementById('Data').value).sendMail();
+
+//     window.location.href = link;
+// }
+// $(function() {
+//     $("#form").submit(function(e) {
+//         e.preventDefault();
+//         $.ajax({
+//             url: './email.php',
+//             type: 'POST',
+//             data: $("#form").serialize(),
+//             success: function(e) {
+//                 // when message has sent 
+//             }
+//         });
+//     });
+// });
+// $('#send').on('click', function(e) {
+//     e.preventDefault();
+//     subject = $('#subject').val();
+//     body = $('#body').val();
+//     window.location = "mailto:shahriarmahmud903@gmail.com?subject=" + subject + "&body=" + body;
+// });
+
+// //animated tab
+// var tabsFn = (function() {
+
+//     function init() {
+//         setHeight();
+//     }
+
+//     function setHeight() {
+//         var $tabPane = $('.tab-pane'),
+//             tabsHeight = $('.nav-tabs').height();
+
+//         $tabPane.css({
+//             height: tabsHeight
+//         });
+//     }
+
+//     $(init);
+// })();

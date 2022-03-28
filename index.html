@@ -16,9 +16,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- font awesome -->
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-
+    <link rel="stylesheet" href="./email.php">
 
 
 </head>
@@ -117,7 +118,7 @@
 
                         <p id="about_me" class="span-font txt--span ">Hello, I am <b class="headline-span "> Shahriar Mahmud Anik</b>, I study at the Independent University Bangladesh in Computer Science and Engineering(CSE) department. </p>
                         <button onclick="typeWriter() " type="button " class="btn btn-primary btn-sm rounded-pill px-4 mt-5 ">
-  <span>Click Me</span>
+  <span>Details </span>
 
   <div class="liquid "></div>
 
@@ -259,9 +260,91 @@
 
         </div>
 
+        <div class="tab_container shadow-bg mt-4 rounded">
+            <input id="tab1" type="radio" name="tabs" checked>
+            <label for="tab1"><i class="fa fa-thin fa-user-graduate"></i><span> Educations</span></label>
+
+            <input id="tab2" type="radio" name="tabs">
+            <label for="tab2"><i class="fa fa-thin fa-badge-check"></i><span>Accomplishments</span></label>
+
+            <input id="tab3" type="radio" name="tabs">
+            <label for="tab3"><i class="fa fa-bar-chart-o"></i><span>Projects</span></label>
+
+            <input id="tab4" type="radio" name="tabs">
+            <label for="tab4"><i class="fa fa-light fa-icons"></i><span>Hobbies</span></label>
+
+            <input id="tab5" type="radio" name="tabs">
+            <label for="tab5"><i class="fa fa-thin fa-chart-network"></i><span>Activity</span></label>
+
+            <section id="content1" class="tab-content">
+                <h3 class="text-uppercase mt-3 headline-bg">Educations</h3>
+                <hr>
+                <h5 class=" headline-span">Independent University Bangladesh </h5>
+                <p>BSc in Computer Science and Engineering , <span class="text-success ">Present</span></p>
+
+                <h5 class=" headline-span"> Rajbari Govt. College </h5>
+                <p>Higher Secondary Certificate</p>
+            </section>
+
+            <section id="content2" class="tab-content">
+                <h3 class="text-uppercase mt-3 headline-bg">Accomplishments</h3>
+
+                <hr>
+                <ul>
+                    <li class=" headline-span"><b>Python for Everybody</b></li>
+                    <a href="https://coursera.org/share/550fe3a6d0cf8b80ef1006605bf26bd2 " target="_blank ">View Certificate</a> <br/>
+                    <li class=" headline-span"><b>Testing and Debugging Python</b></li>
+                    <a href="https://coursera.org/share/cbfcbaeaaaf2aaf37b4cf793c17c211c " target="_blank ">View Certificate</a> <br/>
+                    <li class=" headline-span"><b>Introduction to HTML</b></li>
+                    <a href="https://coursera.org/share/69b5a46e6b29dc491361dc3983fba1c6 " target="_blank ">View Certificate</a> <br/>
+                    <li class=" headline-span"><b>Data Structure</b></li>
+                    <a href="https://coursera.org/share/f7830f0204ae5384ff220bd928f322b5 " target="_blank ">View Certificate</a> <br/>
+                    <li class=" headline-span"><b>Grammar and Punctuation</b></li>
+                    <a href="https://coursera.org/share/13f04def61abe5b40ad985616430b6d2 " target="_blank ">View Certificate</a> <br/>
+
+                </ul>
+            </section>
+
+            <section id="content3" class="tab-content">
+                <h3 class="text-uppercase mt-3 headline-bg">Project</h3>
+                <hr>
+                <ul>
+                    <li>Database Projects</li>
+                    <li>Android Application Projects</li>
+                    <li>WordPress Website Project</li>
+                    <li>Google site Website project</li>
+                    <li>HTML and CSS Hand on project</li>
+                    <li>Bootstrap Projects</li>
+                    <li>Java Projects</li>
+                </ul>
+            </section>
+
+            <section id="content4" class="tab-content">
+                <h3 class="text-uppercase mt-3 headline-bg">Hobbies</h3>
+                <hr>
+                <ul>
+                    <li>Photography</li>
+                    <li>Travelling</li>
+                    <li>Explore New Technology</li>
+                    <li>Event Organizing</li>
+                </ul>
+            </section>
+
+            <section id="content5" class="tab-content">
+                <h3 class="text-uppercase mt-3 headline-bg ">Extra-Curricular-Activity</h3>
+                <hr>
+                <ul>
+                    <li>Organize events in University.</li>
+                    <li>Volunteering in many National and International Events.</li>
+                    <li>Member in many Clubs in our Computer Science and Engineering Department.</li>
+                </ul>
+            </section>
+        </div>
 
 
-        <div class=" resume--container m-5">
+
+
+        <!-- <div class=" resume--container m-5">
 
             <div class="resume--bg-one text-center text-black p-2">
                 <img class="mt-3 " style="width: 50px; height: 50px; " src="./assets/img/edu.svg " class=" " alt="... ">
@@ -343,240 +426,240 @@
                 </ul>
             </div>
         </div>
-    </div>
-    <hr class="rotated--hr shadow-bg margin-md ">
+    </div> -->
+        <hr class="rotated--hr shadow-bg margin-md ">
 
-    <div class="mt-5 ">
-        <div class="text-center headline-bg mt-5 ">
+        <div class="mt-5 ">
+            <div class="text-center headline-bg mt-5 ">
 
-            <h3 id="portfolio">Portfolio</h3>
-            <h6>Check in my Latest Works</h6>
-            <img src="./assets/img/line.png " alt=" ">
-        </div>
-        <!-- Carousel -->
-        <div id="demo" class="carousel slide mt-5 m-5" data-bs-ride="carousel">
-
-            <!-- Indicators/dots -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                <h3 id="portfolio">Portfolio</h3>
+                <h6>Check in my Latest Works</h6>
+                <img src="./assets/img/line.png " alt=" ">
             </div>
+            <!-- Carousel -->
+            <div id="demo" class="carousel slide mt-5 m-5" data-bs-ride="carousel">
 
-            <!-- The slideshow/carousel -->
-            <div class="carousel-inner rounded-3">
-                <div class="carousel-item active">
-                    <img src="./assets/img/sld-1.jpeg" alt="Los Angeles" class="d-block" style="width:100%">
-                    <div class="carousel-caption d-none d-md-block ">
-                        <!-- <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p> -->
-                    </div>
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
                 </div>
-                <div class="carousel-item">
-                    <img src="./assets/img/sld-2.jpeg" alt="Chicago" class="d-block" style="width:100%">
-                    <div class="carousel-caption d-none d-md-block ">
-                        <!-- <h5>Two slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p> -->
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/img/sld-3.jpeg" alt="New York" class="d-block" style="width:100%">
-                    <div class="carousel-caption d-none d-md-block ">
-                        <!-- <h5>Three slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p> -->
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/img/sld-4.jpeg " alt="New York" class="d-block" style="width:100%">
-                    <div class="carousel-caption d-none d-md-block ">
-                        <!-- <h5>Four slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p> -->
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://smartslider3.com/wp-content/uploads/2019/05/sliderimages-780x410.png  " alt="New York" class="d-block" style="width:100%">
-                    <div class="carousel-caption d-none d-md-block ">
-                        <h5>Five slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner rounded-3">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/sld-1.jpeg" alt="Los Angeles" class="d-block" style="width:100%">
+                        <div class="carousel-caption d-none d-md-block ">
+                            <!-- <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p> -->
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/sld-2.jpeg" alt="Chicago" class="d-block" style="width:100%">
+                        <div class="carousel-caption d-none d-md-block ">
+                            <!-- <h5>Two slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p> -->
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/sld-3.jpeg" alt="New York" class="d-block" style="width:100%">
+                        <div class="carousel-caption d-none d-md-block ">
+                            <!-- <h5>Three slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p> -->
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/sld-4.jpeg " alt="New York" class="d-block" style="width:100%">
+                        <div class="carousel-caption d-none d-md-block ">
+                            <!-- <h5>Four slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p> -->
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://smartslider3.com/wp-content/uploads/2019/05/sliderimages-780x410.png  " alt="New York" class="d-block" style="width:100%">
+                        <div class="carousel-caption d-none d-md-block ">
+                            <h5>Five slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
     <span class="carousel-control-prev-icon"></span>
   </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
     <span class="carousel-control-next-icon"></span>
   </button>
+            </div>
+
+
         </div>
+        <hr class="rotated--hr shadow-bg margin-md ">
+        <div class=" mt-5 text-center ">
+            <div class="text-center headline-bg ">
+                <h3>Pricing</h3>
+                <h6>Check our Services package</h6>
+                <img src="./assets/img/line.png " alt=" ">
+            </div>
 
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-4 m-5 ">
+                <div class="col ">
+                    <div class="card h-100 shadow-bg ">
+                        <div class="text-center card--bg-four p-3 ">
+                            <img class="mt-3 " style="width: 50px; height: 50px; " src="./assets/img/basic-needs.png " class="card-img-top " alt="... ">
 
-    </div>
-    <hr class="rotated--hr shadow-bg margin-md ">
-    <div class=" mt-5 text-center ">
-        <div class="text-center headline-bg ">
-            <h3>Pricing</h3>
-            <h6>Check our Services package</h6>
-            <img src="./assets/img/line.png " alt=" ">
-        </div>
+                            <h5 class="card-title ">Basic</h5>
+                            <h5 class="card-title ">70$</h5>
+                            <p class="card-text ">Only PSD Design</p>
 
-        <div class="row row-cols-1 row-cols-md-3 g-4 mt-4 m-5 ">
-            <div class="col ">
-                <div class="card h-100 shadow-bg ">
-                    <div class="text-center card--bg-four p-3 ">
-                        <img class="mt-3 " style="width: 50px; height: 50px; " src="./assets/img/basic-needs.png " class="card-img-top " alt="... ">
+                        </div>
+                        <div class="card-body ">
+                            <!-- <h5 class="card-title ">Card title</h5> -->
+                            <p class="card-text">Here i am offering a basic page plan, feel free to connect me, for more details contact me.</p>
+                            <hr>
+                            <div class=" ">
 
-                        <h5 class="card-title ">Basic</h5>
-                        <h5 class="card-title ">70$</h5>
-                        <p class="card-text ">Only PSD Design</p>
+                                <ul class="list-unstyled my-5 text-small text-left text-dark">
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i> HTML & CSS</li>
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i> Bootstrap 5</li>
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i> Basic Page Design</li>
+                                    <li class="mb-3 ">
+                                        <i class="fa fa-check mr-2 text-primary"></i>
+                                        <del></del>One Page Template
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i>
+                                        <del></del>Source File
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i>
+                                        <del></del>Revision 1 times
+                                    </li>
+                                    <li class="mb-3 text-muted">
+                                        <i class="fa fa-times mr-2"></i>
+                                        <del>Not One more Pages</del>
+                                    </li>
+                                </ul>
+                                <a href="mailto:shahriarmahmud904@gmail.com" class="btn btn-primary btn-block px-4 shadow rounded-pill">Contact Us</a>
 
+                            </div>
+
+                        </div>
+                        <!-- <div class="card-footer ">
+                            <small class="text-muted ">Last updated 3 mins ago</small>
+                        </div> -->
                     </div>
-                    <div class="card-body ">
+                </div>
+                <div class="col ">
+                    <div class="card h-100 shadow-bg ">
+                        <div class="text-center card--bg-one p-3 ">
+                            <img class="mt-3 " style="width: 50px; height: 50px; " src="./assets/img/standard.png " class="card-img-top " alt="... ">
+                            <div class=" ">
+                                <h5 class="card-title ">Standard</h5>
+                                <h5 class="card-title ">100$</h5>
+                                <p class="card-text ">Only PSD Design</p>
+                            </div>
+                        </div>
+                        <div class="card-body ">
+                            <p class="card-text text-dark">Here i am offering a basic page plan, feel free to connect me, for more details contact me.</p>
+                            <hr>
+                            <div class=" ">
+
+                                <ul class="list-unstyled my-5 text-small text-left text-dark">
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i> HTML & CSS</li>
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i> Bootstrap 5</li>
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i> Basic Page Design</li>
+                                    <li class="mb-3 ">
+                                        <i class="fa fa-check mr-2 text-primary"></i>
+                                        <del></del>Two / Three Page Template
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i>
+                                        <del></del>Source File
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i>
+                                        <del></del>Revision 3 times
+                                    </li>
+                                    <li class="mb-3 text-muted">
+                                        <i class="fa fa-times mr-2"></i>
+                                        <del>Not One more Pages</del>
+                                    </li>
+                                </ul>
+                                <a href="mailto:shahriarmahmud904@gmail.com" class="btn btn-primary btn-block px-4 shadow rounded-pill">Contact Us</a>
+
+                            </div>
+                        </div>
+                        <!-- <div class="card-footer ">
+                            <small class="text-muted ">Last updated 3 mins ago</small>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-bg ">
+                        <div class="text-center card--bg-three p-3 ">
+                            <img class="mt-3 " style="width: 50px; height: 50px; " src="./assets/img/premium.png " class="card-img-top " alt="... ">
+                            <div class=" ">
+                                <h5 class="card-title ">Premium</h5>
+                                <h5 class="card-title ">150$</h5>
+                                <p class="card-text ">Only PSD Design</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-dark">Here i am offering a basic page plan, feel free to connect me, for more details contact me.</p>
+                            <hr>
+                            <!-- Pricing Table-->
+                            <div class=" ">
+
+                                <ul class="list-unstyled my-5 text-small text-left text-dark">
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i> HTML & CSS</li>
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i> Bootstrap 5</li>
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i> Basic Page Design</li>
+                                    <li class="mb-3 ">
+                                        <i class="fa fa-check mr-2 text-primary"></i>
+                                        <del></del>Four / Five Page Template
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i>
+                                        <del></del>Source File
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i>
+                                        <del></del>Revision 5 times
+                                    </li>
+                                    <li class="mb-3 text-muted">
+                                        <i class="fa fa-times mr-2"></i>
+                                        <del>Not One more Pages</del>
+                                    </li>
+                                </ul>
+                                </ul>
+                                <a href="mailto:shahriarmahmud904@gmail.com" class="btn btn-primary btn-block px-4 shadow rounded-pill">Contact Us</a>
+
+                            </div>
+                            <!-- END -->
+
+
+
+                            <!-- END -->
+
+                        </div>
+
+
                         <!-- <h5 class="card-title ">Card title</h5> -->
-                        <p class="card-text">Here i am offering a basic page plan ), feel free to connect me, for more details contact me.</p>
-                        <hr>
-                        <div class=" ">
-
-                            <ul class="list-unstyled my-5 text-small text-left text-dark">
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i> HTML & CSS</li>
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i> Bootstrap 5</li>
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i> Basic Page Design</li>
-                                <li class="mb-3 ">
-                                    <i class="fa fa-check mr-2 text-primary"></i>
-                                    <del></del>One Page Template
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i>
-                                    <del></del>Source File
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i>
-                                    <del></del>Revision 1 times
-                                </li>
-                                <li class="mb-3 text-muted">
-                                    <i class="fa fa-times mr-2"></i>
-                                    <del>Not One more Pages</del>
-                                </li>
-                            </ul>
-                            <a href="#" class="btn btn-primary btn-block px-4 shadow rounded-pill">Contact Us</a>
-
-                        </div>
-
-                    </div>
-                    <!-- <div class="card-footer ">
-                            <small class="text-muted ">Last updated 3 mins ago</small>
-                        </div> -->
-                </div>
-            </div>
-            <div class="col ">
-                <div class="card h-100 shadow-bg ">
-                    <div class="text-center card--bg-one p-3 ">
-                        <img class="mt-3 " style="width: 50px; height: 50px; " src="./assets/img/standard.png " class="card-img-top " alt="... ">
-                        <div class=" ">
-                            <h5 class="card-title ">Standard</h5>
-                            <h5 class="card-title ">100$</h5>
-                            <p class="card-text ">Only PSD Design</p>
-                        </div>
-                    </div>
-                    <div class="card-body ">
-                        <p class="card-text">Here i am offering a basic page plan ), feel free to connect me, for more details contact me.</p>
-                        <hr>
-                        <div class=" ">
-
-                            <ul class="list-unstyled my-5 text-small text-left text-dark">
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i> HTML & CSS</li>
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i> Bootstrap 5</li>
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i> Basic Page Design</li>
-                                <li class="mb-3 ">
-                                    <i class="fa fa-check mr-2 text-primary"></i>
-                                    <del></del>Two / Three Page Template
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i>
-                                    <del></del>Source File
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i>
-                                    <del></del>Revision 3 times
-                                </li>
-                                <li class="mb-3 text-muted">
-                                    <i class="fa fa-times mr-2"></i>
-                                    <del>Not One more Pages</del>
-                                </li>
-                            </ul>
-                            <a href="#" class="btn btn-primary btn-block px-4 shadow rounded-pill">Contact Us</a>
-
-                        </div>
-                    </div>
-                    <!-- <div class="card-footer ">
-                            <small class="text-muted ">Last updated 3 mins ago</small>
-                        </div> -->
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-bg ">
-                    <div class="text-center card--bg-three p-3 ">
-                        <img class="mt-3 " style="width: 50px; height: 50px; " src="./assets/img/premium.png " class="card-img-top " alt="... ">
-                        <div class=" ">
-                            <h5 class="card-title ">Premium</h5>
-                            <h5 class="card-title ">150$</h5>
-                            <p class="card-text ">Only PSD Design</p>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Here i am offering a basic page plan ), feel free to connect me, for more details contact me.</p>
-                        <hr>
-                        <!-- Pricing Table-->
-                        <div class=" ">
-
-                            <ul class="list-unstyled my-5 text-small text-left text-dark">
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i> HTML & CSS</li>
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i> Bootstrap 5</li>
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i> Basic Page Design</li>
-                                <li class="mb-3 ">
-                                    <i class="fa fa-check mr-2 text-primary"></i>
-                                    <del></del>Four / Five Page Template
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i>
-                                    <del></del>Source File
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i>
-                                    <del></del>Revision 5 times
-                                </li>
-                                <li class="mb-3 text-muted">
-                                    <i class="fa fa-times mr-2"></i>
-                                    <del>Not One more Pages</del>
-                                </li>
-                            </ul>
-                            </ul>
-                            <a href="#" class="btn btn-primary btn-block px-4 shadow rounded-pill">Contact Us</a>
-
-                        </div>
-                        <!-- END -->
-
-
-
-                        <!-- END -->
-
-                    </div>
-
-
-                    <!-- <h5 class="card-title ">Card title</h5> -->
-                    <!-- <p class="card-text">Here i am offering a basic page plan ), feel free to connect me, for more details contact me.</p>
+                        <!-- <p class="card-text">Here i am offering a basic page plan ), feel free to connect me, for more details contact me.</p>
                         <hr>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
@@ -603,13 +686,13 @@
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                             <label class="form-check-label" for="flexCheckChecked">One Page Template </label>
                         </div> -->
-                </div>
-                <!-- <div class="card-footer ">
+                    </div>
+                    <!-- <div class="card-footer ">
                             <small class="text-muted ">Last updated 3 mins ago</small>
                         </div> -->
+                </div>
             </div>
         </div>
-    </div>
 
     </div>
     <hr class="rotated--hr shadow-bg margin-md ">
@@ -632,7 +715,7 @@
                         <div class="card-body px-lg-5 py-lg-5 text-center w-100 ">
                             <img src="https://bootdey.com/img/Content/avatar/avatar7.png " class="rounded-circle avatar-lg img-thumbnail mb-4 " alt="profile-image ">
                             <h5 class="text-info ">Shahriar Mahmud Anik</h5>
-                            <span>Social Media</span>
+                            <span class=" text-black">Social Media</span>
                             <div class="d-flex mt-3 justify-content-center ">
                                 <a class="btn btn-md btn-floating " href="https://www.instagram.com/shahriar_mahmud_anik/" role="button " target="_blank"><i class="fab fa-instagram fa-2x "></i></a>
                                 <a class="btn btn-md btn-floating " href="https://www.facebook.com/shahriarmahmud.anik" role="button " target="_blank"><i class="fab fa-facebook fa-2x "></i></a>
@@ -648,41 +731,44 @@
 
                     </div> -->
                 </div>
+
                 <div class="col-md-5 align-items-center justify-content-center margin-sm p-4 ">
 
-                    <div class="align-items-center ">
-                        <div class="row mb-3 ">
+                    <form id="data" method="post" action="#">
+                        <div class="align-items-center ">
+                            <div class="row mb-3 ">
 
-                            <div class="col-md-12 ">
-                                <input type="email " class="shadow--bg-dp form-control form-control-sm rounded-2 p-2 " id="colFormLabelSm " placeholder="First Name ">
+                                <div class="col-md-12 ">
+                                    <input type="fname" class="shadow--bg-dp form-control form-control-sm rounded-2 p-2 " id="colFormLabelSm " placeholder="First Name ">
+                                </div>
                             </div>
+                            <div class="row mb-3 ">
+                                <div class="col-md-12 ">
+                                    <input type="lname" class="form-control form-control-sm rounded-2 p-2 " id="colFormLabelSm " placeholder="Last Name ">
+                                </div>
+                            </div>
+                            <div class="row mb-3 ">
+                                <div class="col-md-12 ">
+                                    <input type="email " class="form-control form-control-sm rounded-2 p-2 " id="colFormLabelSm " placeholder="What is your Email? ">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3 ">
+                                <div class="col-md-12 ">
+                                    <input type="message" class="form-control form-control-sm rounded p-4 " id="colFormLabelSm " placeholder="Your Questions Write Here... ">
+                                </div>
+                                <div class=" " id="">
+                                    <button id="sendBtn" class="btn btn-info mt-4 px-5 rounded-pill " type="button ">Submit</button>
+
+                                </div>
+
+                            </div>
+
                         </div>
-                        <div class="row mb-3 ">
-                            <div class="col-md-12 ">
-                                <input type="email " class="form-control form-control-sm rounded-2 p-2 " id="colFormLabelSm " placeholder="Last Name ">
-                            </div>
-                        </div>
-                        <div class="row mb-3 ">
-                            <div class="col-md-12 ">
-                                <input type="email " class="form-control form-control-sm rounded-2 p-2 " id="colFormLabelSm " placeholder="What is your Email? ">
-                            </div>
-                        </div>
 
-                        <div class="row mb-3 ">
-                            <div class="col-md-12 ">
-                                <input type="email " class="form-control form-control-sm rounded p-4 " id="colFormLabelSm " placeholder="Your Questions Write Here... ">
-                            </div>
-                            <div class=" ">
-                                <button class="btn btn-info mt-4 px-5 rounded-pill " type="button ">Submit</button>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
+                    </form>
                 </div>
+
 
             </div>
 
@@ -700,18 +786,12 @@
             </div>
         </div>
     </div>
+
     <div class="d-flex mt-5 justify-content-evenly bg-light shadow--bg p-2 ">
         <small class="text-muted span-font ">&copy All Right Reserve By <strong>Shahriar Mahmud Anik</strong>   @2022
 </small>
 
     </div>
-
-
-
-
-
-
-
 
     <!-- <a href="#" class="btn btn-info btn-block px-4 shadow rounded-pill align-content-lg-end"> <i class="fas fa-arrow-up"></i></a> -->
 
