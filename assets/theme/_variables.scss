@@ -230,7 +230,6 @@ button:hover .liquid {
     }
 }
 
-///////////
 $spacing: 1rem;
 $themeColor: #63B8FF;
 $backColor: #ddd;
@@ -345,25 +344,6 @@ $textShadow: rgba(black,
 }
 
 //animated tab
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
-*,
-*:after,
-*:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
 a {
     color: #ccc;
     text-decoration: none;
@@ -377,7 +357,6 @@ a {
     width: 90%;
     margin: 0 auto;
     position: relative;
-    border-radius: 5px;
 }
 
 .tab_container input,
@@ -445,7 +424,7 @@ label .fa {
         display: none;
     }
     .tab_container {
-        width: 98%;
+        width: 96%;
     }
 }
 

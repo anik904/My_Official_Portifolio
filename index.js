@@ -55,16 +55,18 @@ anime.timeline({ loop: true })
         easing: "easeOutExpo",
         delay: 1000
     });
-///////////////
+
 // Initiate an Ajax request on button click
 // $(document).on("click", "button", function() {
-//     // Adding timestamp to set cache false
+// Adding timestamp to set cache false
+
 //     $.get("" + $.now(), function(data) {
 //         $("body").html(data);
 //     });
 // });
 
-// // Add remove loading class on body element depending on Ajax request status
+//Add remove loading class on body element depending on Ajax request status
+
 // $(document).on({
 //     ajaxStart: function() {
 //         $("body").addClass("loading");
