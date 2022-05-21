@@ -19,7 +19,7 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="./email.php">
+    <!-- <link rel="stylesheet" href="./email.php"> -->
 
 
 </head>
@@ -61,16 +61,23 @@
           <i>Hello , Good People</i>
                 </b> -->
 
+
                 <div class="form-check form-switch">
-                    <input onclick="myFunction()" class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <input onclick="darkMode()" class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
                     <label class="form-check-label" for="flexSwitchCheckDefault">Dark Mode</label>
+                    <!-- <label class="switch">
+                    <input onclick="darkMode()" class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <span class="slider"></span>
+                    </label> -->
                 </div>
+
 
             </div>
         </div>
     </nav>
     <!--End Navbar--->
 
+        <!-- <img class=" net-bg" src="./assets/img/Curve Line.svg" alt=""> -->
 
     <div class=" d-flex avatar-container justify-content-evenly margin-lg ">
         <div class="margin-md">
@@ -89,10 +96,12 @@
             <button type="button " class="btn btn-warning btn-sm rounded-pill mt-3 "> <a type="button" class="text-black " href="https://drive.google.com/drive/folders/1-HF6rx92A_JDvriS1zNw7bAEEX8kM_8V?usp=sharing" target="_blank"> Get Resume</a></button>
         </div>
         <div class="avatar-dp ">
+                                <!-- <img src="./assets/img/hd_bg.svg" alt=""> -->
+
             <img class="avatar-dp rounded-pill shadow-bg-dp mt-2 " style="width: 280px; height: 280px; " src="./assets/img/my cv.png " alt=" ">
         </div>
     </div>
-    <img class=" " style="width: 100%; height: 320px; " src="./assets/img/wave.svg " alt=" ">
+    <img class=" " style="width: 100%; height: 320px; " src="./assets/img/wave (1).svg" alt=" ">
     <!-- <svg class="wave-top " width="100 " viewBox="0 0 1200 250 ">
   <path fill-rule="evenodd " clip-rule="evenodd " d="M0 108.306L50 114.323C100 120.34 200 132.374 300 168.476C400 204.578 500 264.749 600 246.698C700 228.647 800 132.374 900 108.306C1000 84.2382 1100 132.374 1150 156.442L1200 180.51V-8.5451e-06H1150C1100
                 -8.5451e-06 1000 -8.5451e-06 900 -8.5451e-06C800 -8.5451e-06 700 -8.5451e-06 600 -8.5451e-06C500 -8.5451e-06 400 -8.5451e-06 300 -8.5451e-06C200 -8.5451e-06 100 -8.5451e-06 50 -8.5451e-06H0V108.306Z " fill="#0099FF "/>
@@ -117,12 +126,20 @@
                         <h2 class="card-title font--hdl">Me,Myself and I</h2>
 
                         <p id="about_me" class="span-font txt--span ">Hello, I am <b class="headline-span "> Shahriar Mahmud Anik</b>, I study at the Independent University Bangladesh in Computer Science and Engineering(CSE) department. </p>
-                        <button onclick="typeWriter() " type="button " class="btn btn-primary btn-sm rounded-pill px-4 mt-5 ">
-  <span>Details </span>
+                        <!-- <button  type="button " class="btn btn-primary btn-sm rounded-pill px-4 mt-5 ">
+  <span>Details </span> -->
+                        <button onclick="typeWriter() " class="learn-more" id="#start-loader"> <span class="circle" aria-hidden="true"> <span class="icon arrow"></span> </span> <span class="button-text">More Details</span> </button>
 
-  <div class="liquid "></div>
 
-</button>
+                        <!-- <div class="loader"></div>
+                        <div class="">
+                            <div>
+                                <button id="btn" type="button" name="submit">Show Processing</button>
+                                <button type="button" name="submit">Hide Processing</button>
+                            </div>
+
+                        </div> -->
+
 
                         <!-- <button onmouseover="typeWriter() " type="button " class="btn btn-primary btn-sm rounded-pill px-4 mt-5 ">Learn More</button> -->
 
@@ -260,7 +277,7 @@
 
         </div>
 
-        <div class="tab_container shadow-bg mt-4 rounded-1">
+        <div class="tab_container shadow-bg mt-4 ">
             <input id="tab1" type="radio" name="tabs" checked>
             <label for="tab1"><i class="fa fa-thin fa-user-graduate"></i><span> Educations</span></label>
 
@@ -276,7 +293,7 @@
             <input id="tab5" type="radio" name="tabs">
             <label for="tab5"><i class="fa fa-thin fa-chart-network"></i><span>Activity</span></label>
 
-            <section id="content1" class="tab-content">
+            <section id="content1" class="tab-content rounded">
                 <h3 class="text-uppercase mt-3 headline-bg">Educations</h3>
                 <hr>
                 <h5 class=" headline-span">Independent University Bangladesh </h5>
@@ -305,7 +322,7 @@
                 </ul>
             </section>
 
-            <section id="content3" class="tab-content">
+            <section id="content3" class="tab-content rounded">
                 <h3 class="text-uppercase mt-3 headline-bg">Project</h3>
                 <hr>
                 <ul>
@@ -319,7 +336,7 @@
                 </ul>
             </section>
 
-            <section id="content4" class="tab-content">
+            <section id="content4" class="tab-content rounded">
                 <h3 class="text-uppercase mt-3 headline-bg">Hobbies</h3>
                 <hr>
                 <ul>
@@ -330,7 +347,7 @@
                 </ul>
             </section>
 
-            <section id="content5" class="tab-content">
+            <section id="content5" class="tab-content rounded">
                 <h3 class="text-uppercase mt-3 headline-bg ">Extra-Curricular-Activity</h3>
                 <hr>
                 <ul>
@@ -519,7 +536,7 @@
                         </div>
                         <div class="card-body ">
                             <!-- <h5 class="card-title ">Card title</h5> -->
-                            <p class="card-text">Here i am offering a basic page plan, feel free to connect me, for more details contact me.</p>
+                            <p class="card-text  text-dark">Here i am offering a basic page plan, feel free to connect me, for more details contact me.</p>
                             <hr>
                             <div class=" ">
 

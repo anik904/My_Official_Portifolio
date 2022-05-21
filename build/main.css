@@ -3574,7 +3574,7 @@ textarea.form-control-lg { min-height: calc(1.5em + 1rem + 2px); }
 
 *body { font-family: 'Poppins', sans-serif; width: 100%; }
 
-.nav-link { color: #13B6FF !important; }
+.nav-link { color: #13b6ff !important; }
 
 .logo-top { position: relative; max-height: 45px; width: 100px; background-size: contain; padding: -100px; }
 
@@ -3584,21 +3584,21 @@ textarea.form-control-lg { min-height: calc(1.5em + 1rem + 2px); }
 
 .margin-sm { margin-top: 80px; }
 
-.rotated--hr { width: 100%; background-color: #0CBFAE; border-top: 3px solid #0CBFAE; transform: rotate(-3deg); -webkit-box-shadow: 0px 0px 10px 14px rgba(10, 190, 173, 0.6); box-shadow: 0px 0px 10px 14px rgba(5, 255, 230, 0.6); }
+.rotated--hr { width: 100%; background-color: #0cbfae; border-top: 3px solid #0cbfae; transform: rotate(-3deg); -webkit-box-shadow: 0px 0px 10px 14px rgba(10, 190, 173, 0.6); box-shadow: 0px 0px 10px 14px rgba(5, 255, 230, 0.6); }
 
-.card--bg-one { background-color: #8540FF; color: white; }
+.card--bg-one { background-color: #8540ff; color: white; }
 
-.card--bg-two { background-color: #FFC50C; color: white; }
+.card--bg-two { background-color: #ffc50c; color: white; }
 
-.card--bg-three { background-color: #EC407A; color: white; }
+.card--bg-three { background-color: #ec407a; color: white; }
 
-.card--bg-four { background-color: #F57F17; color: white; }
+.card--bg-four { background-color: #f57f17; color: white; }
 
-.card--bg-five { background-color: #13B6FF; color: white; }
+.card--bg-five { background-color: #13b6ff; color: white; }
 
-.card--bg-six { background-color: #49AF46; color: white; }
+.card--bg-six { background-color: #49af46; color: white; }
 
-.font--hdl { font-family: 'Anton', sans-serif; color: #0CBFAE; line-height: 67px; font-weight: bold; font-size: 40px; }
+.font--hdl { font-family: 'Anton', sans-serif; color: #0cbfae; line-height: 67px; font-weight: bold; font-size: 40px; }
 
 /* From cssbuttons.io */
 .blinking-cursor { font-weight: 500; margin-left: 4px; font-size: 20px; color: white !important; -webkit-animation: 1s blink step-end infinite; -moz-animation: 1s blink step-end infinite; -ms-animation: 1s blink step-end infinite; -o-animation: 1s blink step-end infinite; animation: 1s blink step-end infinite; }
@@ -3607,9 +3607,9 @@ textarea.form-control-lg { min-height: calc(1.5em + 1rem + 2px); }
 
 .shadow-bg-dp { -webkit-box-shadow: 0px 0px 10px 16px rgba(10, 190, 173, 0.18); box-shadow: 0px 0px 10px 16px rgba(10, 190, 173, 0.18); border-radius: 2px; }
 
-.headline-bg { color: #0CBFAE; }
+.headline-bg { color: #0cbfae; }
 
-.headline-span { color: #F57F17; }
+.headline-span { color: #f57f17; }
 
 .txt--span { color: #8d8d8d; }
 
@@ -3617,53 +3617,33 @@ textarea.form-control-lg { min-height: calc(1.5em + 1rem + 2px); }
 
 .card-cnt { position: relative; display: flex; flex-direction: column; min-width: 0; word-wrap: break-word; background-color: #fff; background-clip: border-box; border: 0 solid rgba(0, 0, 0, 0.125); border-radius: 1rem; }
 
-.img-thumbnail { padding: .25rem; background-color: #ecf2f5; border: 1px solid #dee2e6; border-radius: .25rem; max-width: 100%; height: auto; }
+.img-thumbnail { padding: 0.25rem; background-color: #ecf2f5; border: 1px solid #dee2e6; border-radius: 0.25rem; max-width: 100%; height: auto; }
 
 .avatar-lg { height: 150px; width: 150px; }
 
 .carousel .carousel-indicators li { width: 10px; height: 10px; border-radius: 100%; }
 
-/* From cssbuttons.io by @westitan */
-button { position: relative; padding: 15px 30px; display: block; text-decoration: none; overflow: hidden; text-transform: uppercase; border-radius: 30px; border: none; }
+button { position: relative; display: inline-block; cursor: pointer; outline: none; border: 0; vertical-align: middle; text-decoration: none; background: transparent; padding: 0; font-size: inherit; font-family: inherit; }
 
-button span { position: relative; color: #fff; font-family: Arial; letter-spacing: 4px; z-index: 1; }
+button.learn-more { width: 12rem; height: auto; }
 
-button .liquid { position: absolute; top: -80px; left: 0; width: 100%; height: 200px; background: #4973ff; box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5); transition: .7s; }
+button.learn-more .circle { transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1); position: relative; display: block; margin: 0; width: 3rem; height: 3rem; background: #282936; border-radius: 1.625rem; }
 
-button .liquid::after, button .liquid::before { content: ''; width: 200%; height: 200%; position: absolute; top: 0; left: 50%; transform: translate(-50%, -75%); background: #fff; }
+button.learn-more .circle .icon { transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1); position: absolute; top: 0; bottom: 0; margin: auto; background: #fff; }
 
-button .liquid::before { border-radius: 45%; background: #141414; animation: animate 5s linear infinite; }
+button.learn-more .circle .icon.arrow { transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1); left: 0.625rem; width: 1.125rem; height: 0.125rem; background: none; }
 
-button .liquid::after { border-radius: 40%; background: rgba(20, 20, 20, 0.5); animation: animate 10s linear infinite; }
+button.learn-more .circle .icon.arrow::before { position: absolute; content: ''; top: -0.29rem; right: 0.0625rem; width: 0.625rem; height: 0.625rem; border-top: 0.125rem solid #fff; border-right: 0.125rem solid #fff; transform: rotate(45deg); }
 
-button:hover .liquid { top: -120px; }
+button.learn-more .button-text { transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1); position: absolute; top: 0; left: 0; right: 0; bottom: 0; padding: 0.75rem 0; margin: 0 0 0 1.85rem; color: #282936; font-weight: 700; line-height: 1.6; text-align: center; }
 
-@keyframes animate { 0% { transform: translate(-50%, -75%) rotate(0deg); }
-  100% { transform: translate(-50%, -75%) rotate(360deg); } }
+button:hover .circle { width: 100%; }
 
-.progress--circle { position: relative; display: inline-block; margin: 1rem; width: 120px; height: 120px; border-radius: 50%; background-color: #ddd; }
+button:hover .circle .icon.arrow { background: #fff; transform: translate(1rem, 0); }
 
-.progress--circle:before { content: ''; position: absolute; top: 15px; left: 15px; width: 90px; height: 90px; border-radius: 50%; background-color: white; }
+button:hover .button-text { color: #fff; }
 
-.progress--circle:after { content: ''; display: inline-block; width: 100%; height: 100%; border-radius: 50%; background-color: #63B8FF; }
-
-.progress__number { position: absolute; top: 50%; width: 100%; line-height: 1; margin-top: -0.75rem; text-align: center; font-size: 1.5rem; color: #777; }
-
-.ripple { width: 1rem; /* control the size */ background: #ffff; /* control the color here */ }
-
-.ripple, .ripple::before, .ripple::after { content: ""; display: grid; grid-area: 1/1; aspect-ratio: 1; border-radius: 50%; box-shadow: 0 0 0 0 #000; /* and here, 3 is the transparency */ animation: r 3s linear infinite var(--s, 0s); }
-
-.ripple::before { --s: 1s
-; }
-
-.ripple::after { --s: 2s
-; }
-
-@keyframes r { to { box-shadow: 0 0 0 6rem #0000; } }
-
-.ripple-body { margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center; gap: 11rem; background: #ffff; }
-
-.dark-mode { background-color: #2A272A; color: #ffffff; }
+.dark-mode { background-color: #2a272a; color: #8f8e8e; }
 
 #btn-back-to-top { position: fixed; bottom: 20px; right: 20px; display: none; }
 
@@ -3674,17 +3654,17 @@ a { color: #ccc; text-decoration: none; outline: none; }
 
 .tab_container input, section { clear: both; display: none; }
 
-.tab_container label { font-weight: 700; font-size: 18px; display: block; float: left; width: 20%; padding: 1.5em; color: #636262; cursor: pointer; text-decoration: none; text-align: center; background: #5eeedf; }
+.tab_container label { font-weight: 700; font-size: 18px; display: block; float: left; width: 20%; padding: 1.5em; color: #636262; cursor: pointer; text-decoration: none; text-align: center; background: #5eeedf; border-radius: 2%; }
 
-#tab1:checked ~ #content1, #tab2:checked ~ #content2, #tab3:checked ~ #content3, #tab4:checked ~ #content4, #tab5:checked ~ #content5 { display: block; padding: 20px; background: #fff; color: #464444; border-bottom: 2px solid #f0f0f0; }
+#tab1:checked ~ #content1, #tab2:checked ~ #content2, #tab3:checked ~ #content3, #tab4:checked ~ #content4, #tab5:checked ~ #content5 { display: block; padding: 20px; background: #fff; color: #464444; border-bottom: 3px solid #11c8ff; }
 
 .tab_container .tab-content p, .tab_container .tab-content h3, .tab_container .tab-content .h3 { -webkit-animation: fadeInScale 0.7s ease-in-out; -moz-animation: fadeInScale 0.7s ease-in-out; animation: fadeInScale 0.7s ease-in-out; }
 
 .tab_container .tab-content h3, .tab_container .tab-content .h3 { text-align: center; }
 
-.tab_container [id^="tab"]:checked + label { background: #fff; box-shadow: inset 0 3px #0CE; }
+.tab_container [id^='tab']:checked + label { background: #fff; box-shadow: inset 0 3px #0ce; }
 
-.tab_container [id^="tab"]:checked + label .fa { color: #0CE; }
+.tab_container [id^='tab']:checked + label .fa { color: #0ce; }
 
 label .fa { font-size: 1.3em; margin: 0 0.4em 0 0; }
 
@@ -3705,6 +3685,8 @@ label .fa { font-size: 1.3em; margin: 0 0.4em 0 0; }
 body, html { margin: 0; padding: 0; }
 
 a { color: #172535; text-decoration: none; }
+
+.net-bg { position: absolute; z-index: -1; }
 
 .card--glass { /* Glassmorphism card effect */ }
 
