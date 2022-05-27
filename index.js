@@ -5,7 +5,7 @@ let i = 0;
 let j = 0;
 let txt =
   'Now im working to improve my own skill with Front-End Development and Some other section. Extremely motivated to constantly develop my skills and grow professionally, I am confident in my ability to come up with interesting ideas for developing new things.If you want to see my working progress the feel free to check out my code on Github. Have a great day!';
-let txt_head = 'Shahriar Mahmud Anik';
+let txt_head = '(HTML | CSS/SASS | Bootstrap | JavaScript)';
 let speed_head = 60;
 let speed_paragraph = 40;
 
